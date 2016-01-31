@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://ncssz.cn/live/comments.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scale=no">
+  <title>Comments scroll show</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/comments.css">
+
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="comment">
+    <div class="commnet-border"></div>
+    <ul id="commentsList" class="list">
+    </ul>
+  </div>
+  
+</div>
+
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script src="./js/comments.js"></script>
+<script type="text/javascript" src="./js/doT.js"></script>
+<script type="text/html" id="messageT">
+  <li id='li{{= it.dataMessageid}}' class='cl active' style='top:{{= it.topLimit}}px;left:{{?it.isNew}}{{= it.translateSide}}px{{??!it.isNew}}0px}}{{??}}{{?}}' data-left='{{= it.left}}' data-messageId={{= it.messageid}}><div class='comment-staff-wrapper fl'><p class='comment-date'>{{= it.currDateStr}}</p><div class='comment-head'><img src='{{= it.imgUrl}}'></div></div><div class='comment-info-wrapper fl'><div class='comment-info'><h3 class='comment-name'>{{= it.name}}</h3><p class='commnet-con'>{{= it.message}}</p></div></div></li>
+</script>
+</body></html>

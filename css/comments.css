@@ -1,0 +1,29 @@
+#commentsList{
+	position: relative;
+	overflow: hidden;
+}
+
+#commentsList > li{
+	position: absolute;
+}
+.comment{
+	height: 90vh;
+	overflow: hidden;
+}
+.comment-info{
+	margin-left: 200px;
+}
+.commnet-border{
+	left: 140px;
+}
+.s-logo{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+@-webkit-keyframes scaleAnimations{
+	0%{-webkit-transform: scale(1);}
+    50%{-webkit-transform: scale(1.5);}
+    100%{-webkit-transform: scale(1);}
+}
